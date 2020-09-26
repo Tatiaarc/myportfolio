@@ -1,5 +1,121 @@
+/* --Varibles-- */
+:root {
+  --grey-font: rgb(0, 0, 0, 0.6);
+  --violet-light: rgb(84, 48, 106, 0.8);
+}
+
+/* --Varibles-- */
+
 body {
   font-family: Helvetica, Arial, sans-serif;
-  margin: 0;
+  color: var(--grey-font);
+  margin: 20px 70px 0px 70px;
   padding: 0;
+}
+/* --header-- */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .logo-nav {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+header .logo-nav figure {
+  margin-left: 0px;
+}
+nav ol {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+nav ol li a {
+  text-decoration: none;
+  padding: 20px;
+  color: var(--grey-font);
+  font-size: 18px;
+}
+
+header .mood-contact {
+  display: flex;
+  align-items: center;
+}
+header .mood .mood-button {
+  border-radius: 15px;
+  border: 1px solid var(--grey-font);
+  height: 20px;
+  width: 45px;
+  font-size: 1em;
+  color: var(--violet-light);
+  background-color: transparent;
+  cursor: pointer;
+
+  margin-left: 50px;
+  margin-right: 50px;
+}
+header .contact button {
+  border-radius: 15px;
+  border: 2px solid var(--violet-light);
+  height: 30px;
+  width: 100px;
+  font-size: 1em;
+  color: var(--violet-light);
+  background-color: transparent;
+  cursor: pointer;
+}
+/* --header-- */
+/* --main- */
+main .hero {
+  display: grid;
+
+  grid-template: 500px 50px 50px / repeat(2, 1fr);
+  height: 650px;
+  align-items: center;
+}
+main .hero h1 {
+  color: var(--violet-light);
+  line-height: 55px;
+  text-align: center;
+  font-size: 38px;
+  font-weight: 500;
+  /* padding-bottom: 50px; */
+}
+main .hero-text2 {
+  grid-row: 2;
+  grid-column: 2 span;
+  text-align: center;
+}
+main .hero-text2 p {
+  font-size: 18px;
+  margin: 0;
+}
+main .hero-arrows {
+  grid-row: 3;
+  grid-column: 2 span;
+  text-align: center;
+}
+main .hero-arrows img {
+  height: 30px;
+  width: 36px;
+}
+main h2 {
+  color: var(--violet-light);
+  text-align: center;
+  font-size: 2em;
+}
+main .skills-square {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: 450px 450px;
+  justify-content: center;
+}
+main .skills-front {
+  border: 1px solid var(--grey-font);
+  height: 500px;
+}
+main .skills-design {
+  border: 1px solid var(--grey-font);
 }
