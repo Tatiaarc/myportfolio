@@ -9,7 +9,7 @@
 body {
   font-family: Helvetica, Arial, sans-serif;
   color: var(--grey-font);
-  margin: 20px 70px 0px 70px;
+  margin-top: 20px;
   padding: 0;
 }
 /* --header-- */
@@ -17,6 +17,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 header .logo-nav {
   display: flex;
@@ -68,6 +70,9 @@ header .contact button {
 }
 /* --header-- */
 /* --main- */
+main {
+  margin: 0px, 70px, 0px, 70px;
+}
 main .hero {
   display: grid;
 
@@ -79,7 +84,7 @@ main .hero h1 {
   color: var(--violet-light);
   line-height: 55px;
   text-align: center;
-  font-size: 38px;
+  font-size: 40px;
   font-weight: 500;
   /* padding-bottom: 50px; */
 }
@@ -101,21 +106,114 @@ main .hero-arrows img {
   height: 30px;
   width: 36px;
 }
+/* main .skills-title,
+.projects-title h2 {
+  font-size: 20px;
+} */
 main h2 {
+  font-size: 24px;
+}
+main .skills,
+h1 {
   color: var(--violet-light);
   text-align: center;
-  font-size: 2em;
+  font-size: 30px;
+}
+main h3,
+p,
+figure {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: var(--grey-font);
+}
+main figure {
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+main .skills img {
+  height: 80px;
+  width: 80px;
 }
 main .skills-square {
-  padding-top: 20px;
+  /* padding-top: 20px; */
   display: grid;
   grid-template-columns: 450px 450px;
   justify-content: center;
 }
 main .skills-front {
-  border: 1px solid var(--grey-font);
-  height: 500px;
+  /* border: 1px solid var(--grey-font); */
+  height: 450px;
 }
-main .skills-design {
+main .projects-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: repeat(1, 200px);
+  gap: 50px;
+  justify-content: center;
+  margin-top: 60px;
+}
+main .project {
   border: 1px solid var(--grey-font);
+  border-radius: 30px;
+}
+main .projects button {
+  display: none;
+}
+main .project img {
+  /* border: 1px solid /red; */
+  border-radius: 30px;
+  height: 100%;
+  width: 100%;
+}
+main .projects-2 {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: repeat(1, 200px);
+  gap: 50px;
+  justify-content: center;
+}
+main .work {
+  padding-top: 70px;
+  padding-bottom: 40px;
+}
+main .work-button {
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+}
+main .work button {
+  border-radius: 15px;
+  border: 2px solid var(--violet-light);
+  height: 35px;
+  width: 170px;
+  font-size: 1em;
+  color: var(--violet-light);
+  background-color: transparent;
+  cursor: pointer;
+}
+footer {
+  background-color: rgb(13, 12, 31, 0.9);
+  /* display: 20px; */
+  height: 150px;
+  width: 100%;
+  margin: 0;
+}
+footer .social-media {
+  display: flex;
+  justify-content: center;
+}
+footer img {
+  height: 60px;
+  width: 60px;
+  padding: 30px;
+}
+footer .done {
+  width: 100%;
+  text-align: center;
+}
+footer span {
+  color: rgb(254, 235, 235, 1);
+  font-size: 12px;
 }
