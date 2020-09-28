@@ -17,8 +17,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 70px;
+  padding-right: 70px;
 }
 header .logo-nav {
   display: flex;
@@ -71,7 +71,8 @@ header .contact button {
 /* --header-- */
 /* --main- */
 main {
-  margin: 0px, 70px, 0px, 70px;
+  margin-left: 70px;
+  margin-right: 70px;
 }
 main .hero {
   display: grid;
@@ -193,6 +194,8 @@ main .work button {
   background-color: transparent;
   cursor: pointer;
 }
+/* --main-- */
+/* --footer-- */
 footer {
   background-color: rgb(13, 12, 31, 0.9);
   /* display: 20px; */
@@ -216,4 +219,19 @@ footer .done {
 footer span {
   color: rgb(254, 235, 235, 1);
   font-size: 12px;
+}
+/* --footer-- */
+/* --responsive-- */
+@media screen and (max-width: 1023px) {
+  main .projects-1 {
+    gap: 30px;
+  }
+  main .projects-2 {
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 780px) {
+  body {
+    background-color: red;
+  }
 }
