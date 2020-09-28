@@ -256,6 +256,7 @@ footer span {
   }
   figure {
     margin: 0;
+    margin-top: 20px;
   }
   main .hero {
     display: grid;
@@ -276,6 +277,7 @@ footer span {
   main .projects-1 {
     grid-template-columns: repeat(1, 300px);
   }
+
   footer {
     width: 500px;
   }
